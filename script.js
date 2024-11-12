@@ -19,17 +19,16 @@ const drahaVolba = (pocet) => {
     return `Catering od ${nazev} pro ${pocet} lidí za ${cena} Kč`;
 };
 
-
 const createEvent = (nazevUdalosti, pocetLidi, funkceCatering) => {
-    const cateringZprava = funkceCatering(pocetLidi);
+    let cateringZprava = funkceCatering(pocetLidi);
+    cateringZprava = cateringZprava.substring(0, 1).toLowerCase() + cateringZprava.substring(1);
     return `Událost ${nazevUdalosti} s ${cateringZprava}.`;
 };
 
-
-console.log(levnaVolba(100)); // Catering od Just Food pro 100 lidí za 10000 Kč
-console.log(stredniVolba(100)); // Catering od Your Mama pro 100 lidí za 150000 Kč
-console.log(drahaVolba(100)); // Catering od Flavour Haven pro 100 lidí za 300000 Kč
+console.log(levnaVolba(100));
+console.log(stredniVolba(100));
+console.log(drahaVolba(100));
 
 
 console.log(createEvent("Inaugurace prezidenta", 100, drahaVolba));
-// Událost Inaugurace prezidenta s catering od Flavour Haven pro 100 lidí za 300000 Kč.
+
