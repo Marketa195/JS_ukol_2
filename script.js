@@ -31,4 +31,6 @@ console.log(drahaVolba(100));
 
 
 console.log(createEvent("Inaugurace prezidenta", 100, drahaVolba));
+console.log(createEvent("Levná párty", 150, levnaVolba));
+console.log(createEvent("Svatba", 120, stredniVolba));
 
