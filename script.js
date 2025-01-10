@@ -1,8 +1,8 @@
 const levnaVolba = (pocet) => {
     const nazev = 'Just Food';
-    const cenaZaOsobu = 10000;
+    const cenaZaOsobu = 1000;
     const cena = pocet * cenaZaOsobu;
-    return `Cateringy od ${nazev} pro ${pocet} lidí za ${cena} Kč`;
+    return `Catering od ${nazev} pro ${pocet} lidí za ${cena} Kč`;
 };
 
 const stredniVolba = (pocet) => {
