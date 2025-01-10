@@ -6,14 +6,14 @@ const levnaVolba = (pocet) => {
 };
 
 const stredniVolba = (pocet) => {
-    const nazev = 'Your Mama';
+    const nazev = 'Your Mamma';
     const cenaZaOsobu = 1500;
     const cena = pocet * cenaZaOsobu;
     return `Catering od ${nazev} pro ${pocet} lidí za ${cena} Kč`;
 };
 
 const drahaVolba = (pocet) => {
-    const nazev = 'Flavour Haven';
+    const nazev = 'Flavour Heaven';
     const cenaZaOsobu = 3000;
     const cena = pocet * cenaZaOsobu;
     return `Catering od ${nazev} pro ${pocet} lidí za ${cena} Kč`;
